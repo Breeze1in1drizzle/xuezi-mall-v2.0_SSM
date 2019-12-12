@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!--导入核心文件-->
+		<script src="../bootstrap3/js/holder.js"></script>
+		<link href="../bootstrap3/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<script src="../bootstrap3/jquery-1.9.1.min.js"></script>
+		<script src="../bootstrap3/js/bootstrap.js"></script>
+		<!-- 字体图标 -->
+		<link rel="stylesheet" href="../bootstrap3/font-awesome-4.7.0/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/top.css" />
+		<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+		<script src="../js/adddel.js" type="text/javascript" charset="utf-8"></script>
+
+<body>
+	<form action="search.html" class="form-inline" role="form" style="float: right;">
+				uid<input type="text" id = "i01" name ="uid">
+				pwd<input type="text" id = "i02" name ="pwd">
+					<button type="button" class="btn btn-default btn-sm"
+					onclick="upd()"><span class="fa fa-search"></span></button>
+	</form>
+</body>
+</html>
+
+	<script type="text/javascript">
+/*修改  */
+	function upd()
+	{
+		var uid = $("i01").value;
+		var name = $("i02").value;
+		$.ajax({
+			"url":"/users/upd/"+uid+"/"+name,
+			"type":"POST",
+			"dataType":"json",
+			"success":function(json) {
+
+			},
+			"error":function() {
+
+			}
+		});
+	}
+	</script>
