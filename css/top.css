@@ -1,0 +1,65 @@
+/*页眉的内填充*/
+
+.header {
+	padding: 20px 60px;
+}
+
+
+
+
+
+/*顶部选项总体*/
+
+.top-item a {
+	color: #bb0b0b;
+	line-height: 40px;
+	font-size: 18px;
+}
+
+
+/*顶部选项的li宽*/
+
+.top-item li {
+	width: 100px;
+	text-align: center;
+}
+
+
+/*顶部选项竖线  |  的宽度*/
+
+.top-item .li-split {
+	width: 10px;
+}
+
+
+/*搜索文本框宽度*/
+
+#search {
+	width: 300px;
+}
+
+
+/*顶部导航条*/
+
+.top-nav {
+	background-color: rgb(238, 9, 9);
+	height: 50px;
+	padding-top: 6px;
+	margin-bottom: 18px;
+}
+
+
+/*管理下拉框样式*/
+
+#top-dropdown-btn {
+	color: #bb0b0b;
+	font-size: 18px;
+}
+
+
+/*管理下拉框li*/
+
+.top-dropdown-ul li {
+	width: 100%;
+	font-size: 18px;
+}
